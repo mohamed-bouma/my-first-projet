@@ -18,6 +18,6 @@ export class AppComponent {
   }
 
   afficherAlert() {
-    this.addText = "Une voiture a été ajoutée !";
+  this.addText = "Une voiture a été ajoutée !";
   }
 }
