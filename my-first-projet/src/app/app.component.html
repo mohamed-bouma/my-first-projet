@@ -1,8 +1,9 @@
 <div class="container-fluid">
-  <h1>HELLO {{ name }}</h1>
-  <input type="text" [(ngModel)]="nomVoiture"> {{nomVoiture}}
-  <button [disabled]="isDisabled" (click)="afficherAlert()" class="btn btn-primary">Ajouter une voiture</button>
-  <span> {{addText}}</span>
-  <app-voiture></app-voiture>
+  <h1 class="text-center">Gestionnaire de voitures</h1>
   <app-formulaire></app-formulaire>
+  
+  <span *ngIf="isAdded"> {{addText}}</span>
+
+  <app-voiture *ngFor="let voiture of voitures"></app-voiture>
+  
 </div>

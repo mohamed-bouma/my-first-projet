@@ -8,6 +8,5 @@ import { Component } from "@angular/core";
 export class VoitureComponent {
     name: string = "BMW";
     status: boolean = true;
-    name2: string = "CITROEN";
-    status2: boolean = false;
+    textColor: string = this.status ? 'green' : 'red';
 }
